@@ -1,0 +1,18 @@
+{
+  "data": {
+    "round": null
+  },
+  "errors": [
+    {
+      "message": "队名不可用",
+      "path": [
+        "round",
+        "roster",
+        "edges",
+        0,
+        "node",
+        "name"
+      ]
+    }
+  ]
+}

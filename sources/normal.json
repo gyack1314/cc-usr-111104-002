@@ -1,0 +1,157 @@
+{
+  "routes": [
+    {
+      "path": "/graphql",
+      "method": "POST",
+      "body": {
+        "operationName": "Revision",
+        "variables": {}
+      },
+      "responses": [
+        {
+          "file": "Revision-0-0.json",
+          "headers": [
+            [
+              "Content-Type",
+              "application/json"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/graphql",
+      "method": "POST",
+      "body": {
+        "operationName": "Rounds",
+        "variables": {
+          "revision": "v1",
+          "after": null
+        }
+      },
+      "responses": [
+        {
+          "file": "Rounds-1-0.json",
+          "headers": [
+            [
+              "Content-Type",
+              "application/json"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/graphql",
+      "method": "POST",
+      "body": {
+        "operationName": "Teams",
+        "variables": {
+          "revision": "v1",
+          "id": "R1",
+          "after": null
+        }
+      },
+      "responses": [
+        {
+          "file": "Teams-2-0.json",
+          "headers": [
+            [
+              "Content-Type",
+              "application/json"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/graphql",
+      "method": "POST",
+      "body": {
+        "operationName": "Submissions",
+        "variables": {
+          "revision": "v1",
+          "id": "R1",
+          "teamAfter": null,
+          "after": null
+        }
+      },
+      "responses": [
+        {
+          "file": "Submissions-3-0.json",
+          "headers": [
+            [
+              "Content-Type",
+              "application/json"
+            ]
+          ]
+        },
+        {
+          "file": "Submissions-3-1.json",
+          "headers": [
+            [
+              "Content-Type",
+              "application/json"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/graphql",
+      "method": "POST",
+      "body": {
+        "operationName": "Teams",
+        "variables": {
+          "revision": "v1",
+          "id": "R2",
+          "after": null
+        }
+      },
+      "responses": [
+        {
+          "file": "Teams-4-0.json",
+          "headers": [
+            [
+              "Content-Type",
+              "application/json"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/graphql",
+      "method": "POST",
+      "body": {
+        "operationName": "Submissions",
+        "variables": {
+          "revision": "v1",
+          "id": "R2",
+          "teamAfter": null,
+          "after": null
+        }
+      },
+      "responses": [
+        {
+          "file": "Submissions-5-0.json",
+          "headers": [
+            [
+              "Content-Type",
+              "application/json"
+            ]
+          ]
+        },
+        {
+          "file": "Submissions-5-1.json",
+          "headers": [
+            [
+              "Content-Type",
+              "application/json"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

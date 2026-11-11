@@ -1,0 +1,58 @@
+{
+  "data": {
+    "round": {
+      "id": "R1",
+      "roster": {
+        "edges": [
+          {
+            "cursor": "cT1",
+            "node": {
+              "id": "T1",
+              "name": "合成甲队",
+              "work": {
+                "edges": [
+                  {
+                    "cursor": "cR1S",
+                    "node": {
+                      "id": "R1S",
+                      "title": "展示资料",
+                      "attachment": null
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "endCursor": null,
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ],
+        "pageInfo": {
+          "endCursor": null,
+          "hasNextPage": false
+        }
+      }
+    }
+  },
+  "errors": [
+    {
+      "message": "附件暂不可用",
+      "path": [
+        "round",
+        "roster",
+        "edges",
+        0,
+        "node",
+        "work",
+        "edges",
+        0,
+        "node",
+        "attachment"
+      ],
+      "extensions": {
+        "code": "TEMPORARY"
+      }
+    }
+  ]
+}

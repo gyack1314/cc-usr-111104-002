@@ -1,0 +1,11 @@
+{
+  "data": null,
+  "errors": [
+    {
+      "message": "版本失效",
+      "extensions": {
+        "code": "REVISION_EXPIRED"
+      }
+    }
+  ]
+}

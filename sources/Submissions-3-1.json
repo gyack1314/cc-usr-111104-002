@@ -1,0 +1,38 @@
+{
+  "data": {
+    "round": {
+      "id": "R1",
+      "roster": {
+        "edges": [
+          {
+            "cursor": "cT1",
+            "node": {
+              "id": "T1",
+              "name": "合成甲队",
+              "work": {
+                "edges": [
+                  {
+                    "cursor": "cR1S",
+                    "node": {
+                      "id": "R1S",
+                      "title": "展示资料",
+                      "attachment": "/files/a"
+                    }
+                  }
+                ],
+                "pageInfo": {
+                  "endCursor": null,
+                  "hasNextPage": false
+                }
+              }
+            }
+          }
+        ],
+        "pageInfo": {
+          "endCursor": null,
+          "hasNextPage": false
+        }
+      }
+    }
+  }
+}

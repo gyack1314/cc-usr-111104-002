@@ -1,0 +1,5 @@
+# 资料接口
+
+`schema.graphql`与`operations.graphql`固定了字段非空性和别名。来源服务按POST JSON中的operationName与variables匹配，不解释query文本；客户端可使用所给操作，query文本仍应是合法GraphQL。每层游标是独立不透明字符串，null表示起点，结束连接允许endCursor为null且hasNextPage为false。操作Submissions中的teamAfter选择一页队伍，work属于响应中每个队伍。
+
+normal响应先出现attachment局部错误再恢复，R1/R2共享T1。其他场景文件在相同HTTP服务下提供冒泡、版本失效、游标循环和未知路径资料；更完整的多页资料可通过增加相同格式路由构造。所有错误路径从响应data根开始，schema允许的无error空值是合法值。发生TEMPORARY错误不改变revision。来源脚本不保存客户端采集进度。

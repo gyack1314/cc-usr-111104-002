@@ -1,0 +1,22 @@
+{
+  "data": {
+    "round": {
+      "id": "R1",
+      "roster": {
+        "edges": [
+          {
+            "cursor": "cT1",
+            "node": {
+              "id": "T1",
+              "name": "合成甲队"
+            }
+          }
+        ],
+        "pageInfo": {
+          "endCursor": null,
+          "hasNextPage": false
+        }
+      }
+    }
+  }
+}

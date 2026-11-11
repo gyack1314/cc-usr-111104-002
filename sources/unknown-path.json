@@ -1,0 +1,15 @@
+{
+  "routes": [
+    {
+      "path": "/graphql",
+      "responses": [
+        {
+          "status": 200,
+          "headers": [],
+          "file": "unknown-path-response.json"
+        }
+      ],
+      "method": "POST"
+    }
+  ]
+}

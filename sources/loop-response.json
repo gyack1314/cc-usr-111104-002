@@ -1,0 +1,18 @@
+{
+  "data": {
+    "rounds": {
+      "edges": [
+        {
+          "cursor": "cR1",
+          "node": {
+            "id": "R1"
+          }
+        }
+      ],
+      "pageInfo": {
+        "endCursor": "again",
+        "hasNextPage": true
+      }
+    }
+  }
+}

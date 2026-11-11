@@ -1,0 +1,4 @@
+query Revision { revision }
+query Rounds($revision:ID!,$after:String) { rounds(revision:$revision,after:$after) { edges { cursor node { id } } pageInfo { endCursor hasNextPage } } }
+query Teams($id:ID!,$revision:ID!,$after:String) { round(id:$id,revision:$revision) { id roster:teams(after:$after) { edges { cursor node { id name } } pageInfo { endCursor hasNextPage } } } }
+query Submissions($id:ID!,$revision:ID!,$teamAfter:String,$after:String) { round(id:$id,revision:$revision) { id roster:teams(after:$teamAfter) { edges { cursor node { id name work:submissions(after:$after) { edges { cursor node { id title attachment } } pageInfo { endCursor hasNextPage } } } } pageInfo { endCursor hasNextPage } } } }

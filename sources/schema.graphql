@@ -1,0 +1,12 @@
+schema { query: Query }
+type Query { revision: ID!, rounds(revision: ID!, after: String): RoundConnection!, round(id: ID!, revision: ID!): Round }
+type RoundConnection { edges: [RoundEdge!]!, pageInfo: PageInfo! }
+type RoundEdge { cursor: String!, node: Round! }
+type Round { id: ID!, teams(after: String): TeamConnection! }
+type TeamConnection { edges: [TeamEdge!]!, pageInfo: PageInfo! }
+type TeamEdge { cursor: String!, node: Team! }
+type Team { id: ID!, name: String!, submissions(after: String): SubmissionConnection! }
+type SubmissionConnection { edges: [SubmissionEdge!]!, pageInfo: PageInfo! }
+type SubmissionEdge { cursor: String!, node: Submission! }
+type Submission { id: ID!, title: String!, attachment: String }
+type PageInfo { endCursor: String, hasNextPage: Boolean! }
